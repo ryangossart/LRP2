@@ -1,0 +1,28 @@
+modules/local/filter_cpat/main.nf
+  s_ec4cd5db1b2b97::t_8a0efd943c5589 24-27
+modules/local/protein_classification/main.nf
+  s_ec4cd5db1b2b97::t_9c275ffb73f5af 27-28
+nextflow.config
+  s_ec4cd5db1b2b97::t_0f8d0c58b9eed6 400-403
+modules/local/cpat_orf/main.nf
+  s_ec4cd5db1b2b97::t_4195d868f7edb5 28-29
+subworkflows/local/predicted_proteome/nextflow.config
+  s_ec4cd5db1b2b97::t_6a691c7ab402a5 1-17,19-24
+  s_ec4cd5db1b2b97::t_ef90bf6f8ad926 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1dd8ac98a1ed6018e8b749554736caddfc0ab42b",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
