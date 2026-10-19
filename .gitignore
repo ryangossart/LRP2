@@ -52,6 +52,7 @@ rsconnect/
 .nextflow*
 .nextflow.log*
 .nextflow/
+.lineage/
 
 # Project directories
 data/
