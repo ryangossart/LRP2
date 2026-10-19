@@ -43,10 +43,6 @@ input:
       type: file
       description: GENCODE reference GTF file
       pattern: "*.gtf"
-  - filter_cpat_script:
-      type: file
-      description: R script for filtering CPAT output
-      pattern: "*.R"
 output:
   - meta:
       type: map

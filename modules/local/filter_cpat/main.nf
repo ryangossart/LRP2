@@ -8,7 +8,6 @@ process FILTER_CPAT {
     input:
     tuple val(meta), path(orf_prob), path(orf_seqs), path(corrected_fasta), path(corrected_gtf), path(mapping_file)
     path reference_gtf
-    path filter_cpat_script
 
     output:
     tuple val(meta), path("*.predicted_proteome.CPAT_ORFs_mapped.tsv"), emit: all_orfs_mapped
@@ -32,7 +31,7 @@ process FILTER_CPAT {
     export R_LIBS="/usr/local/lib/R/site-library:/usr/lib/R/site-library:/usr/lib/R/library"
 
     # Run the CPAT filter script with CLI arguments
-    Rscript ${filter_cpat_script} \\
+    03_filter_cpat.R \\
         --basename ${prefix} \\
         --cpat_fasta ${orf_seqs} \\
         --cpat_results ${orf_prob} \\

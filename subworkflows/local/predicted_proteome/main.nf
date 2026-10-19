@@ -19,7 +19,6 @@ workflow PREDICTED_PROTEOME {
     reference_gtf               // path: reference GENCODE GTF
     hexamer_file                // path: CPAT hexamer file (species-specific)
     logit_model                 // path: CPAT logit model (species-specific)
-    filter_cpat_script          // path: R script for filtering CPAT output
     sqanti_protein_script       // path: Python script for SQANTI protein classification
     protein_class_script        // path: R script for 5'UTR protein classification
 
@@ -46,8 +45,7 @@ workflow PREDICTED_PROTEOME {
             .join(ch_samples, by: 0)
             .map { meta, orf_prob, orf_seqs, fasta, gtf, _classification, hashids, mapping ->
                 [meta, orf_prob, orf_seqs, fasta, gtf, mapping] },
-        reference_gtf,
-        filter_cpat_script
+        reference_gtf
     )
     ch_versions = ch_versions.mix(FILTER_CPAT.out.versions)
 

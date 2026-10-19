@@ -305,15 +305,6 @@
                     "description": "Number of top ORFs to retain per transcript.",
                     "fa_icon": "fas fa-sort-numeric-down"
                 },
-                "filter_cpat_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to CPAT filtering R script.",
-                    "help_text": "R script used to filter CPAT output and call best ORFs.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
                 "sqanti_protein_script": {
                     "type": "string",
                     "format": "file-path",
