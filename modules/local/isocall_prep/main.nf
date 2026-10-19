@@ -4,8 +4,8 @@ process ISOCALL_PREP {
 
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'docker://jtllab/isocall:1.3.0-nextflow-fix' :
-        'jtllab/isocall:1.3.0-nextflow-fix' }"
+        'docker://docker.io/jtllab/isocall:1.3.0-nextflow-fix' :
+        'docker.io/jtllab/isocall:1.3.0-nextflow-fix' }"
         
 
     input:
