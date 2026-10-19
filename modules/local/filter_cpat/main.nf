@@ -21,7 +21,10 @@ process FILTER_CPAT {
     script:
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
-    def cpat_coding_threshold = task.ext.cpat_coding_threshold ?: params.cpat_coding_threshold
+    def cpat_coding_threshold = task.ext.cpat_coding_threshold
+    if (cpat_coding_threshold == null) {
+        error "FILTER_CPAT: cpat_coding_threshold could not be resolved from task.ext.cpat_coding_threshold. Check that predicted_proteome's colocated nextflow.config (or conf/modules.config's species-based override) is included."
+    }
 
     """
     exec > >(tee ${prefix}_S3_PREDICTED_PROTEOME_M2_FILTER_CPAT_log.txt) 2>&1

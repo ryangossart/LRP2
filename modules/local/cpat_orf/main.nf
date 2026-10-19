@@ -25,8 +25,8 @@ process CPAT_ORF {
     script:
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
-    def min_orf = task.ext.min_orf ?: params.min_orf
-    def top_orf = task.ext.top_orf ?: params.top_orf
+    def min_orf = task.ext.min_orf
+    def top_orf = task.ext.top_orf
 
     """
     exec > >(tee ${prefix}_S3_PREDICTED_PROTEOME_M1_CPAT_ORF_log.txt) 2>&1

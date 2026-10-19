@@ -24,8 +24,8 @@ process PROTEIN_CLASSIFICATION {
     script:
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
-    def min_junctions_after_stop = task.ext.min_junctions_after_stop ?: params.min_junctions_after_stop_codon
-    def protein_class_keep = task.ext.protein_class_keep ?: params.protein_class_keep
+    def min_junctions_after_stop = task.ext.min_junctions_after_stop
+    def protein_class_keep = task.ext.protein_class_keep
 
     """
     exec > >(tee ${prefix}_S3_PREDICTED_PROTEOME_M4_PROTEIN_CLASSIFICATION_log.txt) 2>&1
