@@ -1,0 +1,21 @@
+modules/local/filter_cpat/main.nf
+  s_ec4cd5db1b2b97::t_46b69469c5d4d6 34
+subworkflows/local/predicted_proteome/main.nf
+  s_ec4cd5db1b2b97::t_d5b1ae3a854e99 48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4cb64c216afd41e6a6017c5d08ffc10811d09d6e",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "unknown"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
