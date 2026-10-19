@@ -363,8 +363,7 @@ workflow LRP2 {
                     [meta, fasta, gtf, classification, hashids, mapping] },
             ch_gtf,
             hexamer_file,
-            logit_model,
-            file(params.protein_class_script)
+            logit_model
         )
         ch_versions = ch_versions.mix(PREDICTED_PROTEOME.out.versions.ifEmpty([]))
     }

@@ -8,7 +8,6 @@ process PROTEIN_CLASSIFICATION {
     input:
     tuple val(meta), path(protein_classification), path(cds_gtf), path(corrected_fasta), path(hashids_cpm), path(all_orfs_mapped)
     path reference_gtf
-    path protein_class_script
 
     output:
     tuple val(meta), path("*.predicted_proteome.best_ORF_summary.txt"), emit: protein_all_isoforms
@@ -34,7 +33,7 @@ process PROTEIN_CLASSIFICATION {
     export R_LIBS_USER=""
     export R_LIBS="/usr/local/lib/R/site-library:/usr/lib/R/site-library:/usr/lib/R/library"
 
-    Rscript \$(pwd)/$protein_class_script \\
+    04_protein_classification.R \\
         --basename $prefix \\
         --gencode_gtf $reference_gtf \\
         --sample_cds_gtf $cds_gtf \\

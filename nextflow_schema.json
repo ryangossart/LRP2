@@ -305,15 +305,6 @@
                     "description": "Number of top ORFs to retain per transcript.",
                     "fa_icon": "fas fa-sort-numeric-down"
                 },
-                "protein_class_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to protein classification R script.",
-                    "help_text": "R script used for 5'UTR and protein classification.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
                 "protein_class_keep": {
                     "type": "string",
                     "default": "FPM,IPM,NPC,NPE",

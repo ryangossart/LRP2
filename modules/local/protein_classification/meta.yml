@@ -39,10 +39,6 @@ input:
       type: file
       description: GENCODE reference GTF file
       pattern: "*.gtf"
-  - protein_class_script:
-      type: file
-      description: R script for protein and 5'UTR classification
-      pattern: "*.R"
 output:
   - meta:
       type: map
