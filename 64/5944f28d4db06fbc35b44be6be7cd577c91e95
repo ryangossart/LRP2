@@ -1,0 +1,23 @@
+subworkflows/local/predicted_proteome/main.nf
+  s_ec4cd5db1b2b97::t_1e0297cc3eac54 69
+modules/local/protein_classification/main.nf
+  s_ec4cd5db1b2b97::t_e3f308ca8c7b30 36
+workflows/lrp2.nf
+  s_ec4cd5db1b2b97::t_62c9d677d89e06 366
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "645944f28d4db06fbc35b44be6be7cd577c91e95",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
