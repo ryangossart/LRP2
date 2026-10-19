@@ -1,0 +1,21 @@
+modules/local/sqanti_protein/main.nf
+  s_ec4cd5db1b2b97::t_d51fbf543d0eb9 35-36
+subworkflows/local/predicted_proteome/main.nf
+  s_ec4cd5db1b2b97::t_5ed07d462a0ecc 56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b4821446b35e43813fe28ca7254423d77b956ba2",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "unknown"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
