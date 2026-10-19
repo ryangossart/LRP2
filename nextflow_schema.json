@@ -305,15 +305,6 @@
                     "description": "Number of top ORFs to retain per transcript.",
                     "fa_icon": "fas fa-sort-numeric-down"
                 },
-                "sqanti_protein_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to SQANTI protein classification Python script.",
-                    "help_text": "Python script used for SQANTI3 protein classification.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
                 "protein_class_script": {
                     "type": "string",
                     "format": "file-path",

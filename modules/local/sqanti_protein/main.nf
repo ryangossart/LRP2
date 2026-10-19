@@ -8,7 +8,6 @@ process SQANTI_PROTEIN {
     input:
     tuple val(meta), path(cds_gtf)
     path reference_gtf
-    path sqanti_protein_script
 
     output:
     tuple val(meta), path("*.predicted_proteome.best_ORF_SQANTI_classification.tsv"), emit: protein_classification
@@ -33,8 +32,8 @@ process SQANTI_PROTEIN {
     export PYTHONPATH=\${SQANTI_PATH}/src/utilities:\${SQANTI_PATH}/utilities:\${SQANTI_PATH}:\${PYTHONPATH:-}
 
     # Copy the script locally and patch it to use the platform-specific gtfToGenePred binary
-    # v5.5.4 has gtfToGenePred-linux-x86_64 instead of gtfToGenePred
-    cp $sqanti_protein_script ./sqanti3_protein_input_full_gtf_patched.py
+    # v5.5.4 has gtfToGenePred-linux-x86_64 instead of gtfToGenePred.
+    cp \$(command -v 04_sqanti3_protein.py) ./sqanti3_protein_input_full_gtf_patched.py
     sed -i 's|GTF2GENEPRED_PROG = os.path.join(sqanti_path, "src", "utilities", "gtfToGenePred")|GTF2GENEPRED_PROG = os.path.join(sqanti_path, "src", "utilities", "gtfToGenePred-linux-x86_64")|g' ./sqanti3_protein_input_full_gtf_patched.py
 
     python ./sqanti3_protein_input_full_gtf_patched.py \\

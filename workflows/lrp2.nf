@@ -364,7 +364,6 @@ workflow LRP2 {
             ch_gtf,
             hexamer_file,
             logit_model,
-            file(params.sqanti_protein_script),
             file(params.protein_class_script)
         )
         ch_versions = ch_versions.mix(PREDICTED_PROTEOME.out.versions.ifEmpty([]))
