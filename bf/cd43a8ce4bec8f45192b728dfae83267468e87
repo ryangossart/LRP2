@@ -1,0 +1,18 @@
+subworkflows/local/predicted_proteome/main.nf
+  h_047875f5d9511f 1-28
+subworkflows/local/predicted_proteome/meta.yml
+  h_047875f5d9511f 1-51
+subworkflows/local/predicted_proteome/tests/main.nf.test
+  h_047875f5d9511f 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bfcd43a8ce4bec8f45192b728dfae83267468e87",
+  "prompts": {},
+  "humans": {
+    "h_047875f5d9511f": {
+      "author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
