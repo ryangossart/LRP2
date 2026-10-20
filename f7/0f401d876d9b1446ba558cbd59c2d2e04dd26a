@@ -1,0 +1,23 @@
+modules/local/filter_transcriptome/main.nf
+  s_ec4cd5db1b2b97::t_0703955ccb2eca 31-35
+nextflow.config
+  s_ec4cd5db1b2b97::t_36b596c16271b6 401
+subworkflows/local/transcriptome/nextflow.config
+  s_ec4cd5db1b2b97::t_f6982dbb942a18 1-19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f70f401d876d9b1446ba558cbd59c2d2e04dd26a",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
