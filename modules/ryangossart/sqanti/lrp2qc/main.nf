@@ -1,4 +1,4 @@
-process SQANTI_QC {
+process SQANTI_LRP2QC {
     tag "$meta.id"
     label 'process_high'
 

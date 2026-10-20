@@ -70,6 +70,21 @@
                         "git_sha": "412dbe357bb70da48051d6ad16b6e253fcfc36f2",
                         "installed_by": ["predicted_proteome"]
                     },
+                    "gtf/lrp2filtertranscriptome": {
+                        "branch": "main",
+                        "git_sha": "616a7a28c68d79dc5ffcb0d2d90d758caa65984e",
+                        "installed_by": ["lrp2transcriptome"]
+                    },
+                    "gtf/lrp2generatehashids": {
+                        "branch": "main",
+                        "git_sha": "616a7a28c68d79dc5ffcb0d2d90d758caa65984e",
+                        "installed_by": ["lrp2transcriptome"]
+                    },
+                    "sqanti/lrp2qc": {
+                        "branch": "main",
+                        "git_sha": "616a7a28c68d79dc5ffcb0d2d90d758caa65984e",
+                        "installed_by": ["lrp2transcriptome"]
+                    },
                     "sqanti/protein": {
                         "branch": "main",
                         "git_sha": "412dbe357bb70da48051d6ad16b6e253fcfc36f2",
@@ -84,6 +99,11 @@
             },
             "subworkflows": {
                 "ryangossart": {
+                    "lrp2transcriptome": {
+                        "branch": "main",
+                        "git_sha": "616a7a28c68d79dc5ffcb0d2d90d758caa65984e",
+                        "installed_by": ["subworkflows"]
+                    },
                     "predicted_proteome": {
                         "branch": "main",
                         "git_sha": "412dbe357bb70da48051d6ad16b6e253fcfc36f2",

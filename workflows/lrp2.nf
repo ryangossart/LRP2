@@ -13,7 +13,7 @@ include { SANITIZE_TRANSCRIPT_IDS as SANITIZE_TRANSCRIPT_IDS_S2_COUNTS } from '.
 include { VALIDATE_TRANSCRIPT_IDS as VALIDATE_TRANSCRIPT_IDS_S2 } from '../modules/local/validate_transcript_ids/main'
 include { BUILD_PROTEOME_REFERENCE       } from '../modules/local/build_proteome_reference/main'
 include { PACBIO_ISOCALL                 } from '../subworkflows/local/pacbio_isocall'
-include { TRANSCRIPTOME                  } from '../subworkflows/local/transcriptome'
+include { TRANSCRIPTOME                  } from '../subworkflows/ryangossart/lrp2transcriptome'
 include { PREDICTED_PROTEOME             } from '../subworkflows/ryangossart/predicted_proteome'
 include { PROTEOMICS                     } from '../subworkflows/local/proteomics'
 include { MULTISAMPLE_ANALYSIS           } from '../subworkflows/local/multisample_analysis'

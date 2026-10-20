@@ -1,4 +1,4 @@
-process GENERATE_HASHIDS {
+process GTF_LRP2GENERATEHASHIDS {
     tag "$meta.id"
     label 'process_low'
 

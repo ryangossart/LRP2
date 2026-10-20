@@ -1,4 +1,4 @@
-process FILTER_TRANSCRIPTOME {
+process GTF_LRP2FILTERTRANSCRIPTOME {
     tag "$meta.id"
     label 'process_medium'
 
