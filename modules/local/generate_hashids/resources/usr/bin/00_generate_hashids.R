@@ -47,16 +47,14 @@ option_list = list(
               help = "Path to SQANTI classification file"),
   make_option(c("--reference_gtf"), type = "character", default = NULL,
               help = "Path to reference GTF"),
-  make_option(c("--hashlib_script"), type = "character", default = NULL,
-              help = "Path to python hashlib_id_generator.py"),
   make_option(c("--output_dir"), type = "character", default = NULL,
               help = "Output directory for results")
 )
 
 opt = parse_args(OptionParser(option_list = option_list))
 
-required_args = c("basename", "sample_gtf", "classification", "reference_gtf", 
-                  "hashlib_script", "output_dir")
+required_args = c("basename", "sample_gtf", "classification", "reference_gtf",
+                  "output_dir")
 
 missing = required_args[sapply(required_args, function(x) is.null(opt[[x]]))]
 if (length(missing) > 0) {
@@ -67,13 +65,11 @@ basename       = opt$basename
 sample_gtf     = opt$sample_gtf
 class_file     = opt$classification
 reference_gtf  = opt$reference_gtf
-hashlib_script = opt$hashlib_script
 output_dir     = opt$output_dir
 
 stopifnot("Sample GTF not found"          = file.exists(sample_gtf))
 stopifnot("Classification file not found" = file.exists(class_file))
 stopifnot("Reference GTF not found"       = file.exists(reference_gtf))
-stopifnot("Hashlib script not found"      = file.exists(hashlib_script))
 
 # =============================================================================
 # Helper functions
@@ -193,7 +189,7 @@ exons = convert_gtf_to_psl(gtf_input_path  = sample_gtf,
                            psl_output_file = psl)
 
 # Run python script for hash ids- generates mapping file with transcript_id and hash_id
-system2("python", args = c(hashlib_script, psl, hashid_file))
+system2("hashlib_id_generator.py", args = c(psl, hashid_file))
 
 hashids = read_tsv(hashid_file, show_col_types = FALSE)
 cat("\nGenerated hash IDs for ", nrow(hashids), " transcripts\n")

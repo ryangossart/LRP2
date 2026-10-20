@@ -174,30 +174,12 @@
             "fa_icon": "fas fa-filter",
             "description": "Options for the SQANTI3 QC and filtering modules.",
             "properties": {
-                "generate_hashids_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to hash ID generation R script.",
-                    "help_text": "R script used to generate hash IDs for transcripts.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
                 "filter_script": {
                     "type": "string",
                     "format": "file-path",
                     "exists": true,
                     "description": "Path to SQANTI filtering R script.",
                     "help_text": "R script used to filter SQANTI3 QC output.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
-                "hashlib_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to hashlib ID generator Python script.",
-                    "help_text": "Python script used to generate hash IDs for transcripts.",
                     "fa_icon": "far fa-file-code",
                     "hidden": true
                 },

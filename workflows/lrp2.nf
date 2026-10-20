@@ -331,9 +331,7 @@ workflow LRP2 {
             ch_gtf,
             ch_fasta,
             file(sample_metadata_file),
-            file(params.filter_script),
-            file(params.hashlib_script),
-            file(params.generate_hashids_script)
+            file(params.filter_script)
         )
         ch_versions = ch_versions.mix(TRANSCRIPTOME.out.versions.ifEmpty([]))
 

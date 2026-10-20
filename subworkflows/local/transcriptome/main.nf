@@ -19,8 +19,6 @@ workflow TRANSCRIPTOME {
     reference_fasta             // path: reference GENCODE FASTA
     sample_metadata             // path: sample metadata CSV
     filter_script               // path: R filtering script (02_filter_sqanti_transcripts.R)
-    hashlib_script              // path: Python hashlib_id_generator script
-    generate_hashids_script     // path: R script for generating hashids (00_generate_hashids.R)
 
     main:
     ch_versions = channel.empty()
@@ -41,9 +39,7 @@ workflow TRANSCRIPTOME {
     GENERATE_HASHIDS (
         SQANTI_QC.out.corrected_gtf
             .join(SQANTI_QC.out.classification, by: 0),
-        reference_gtf,
-        hashlib_script,
-        generate_hashids_script
+        reference_gtf
     )
     ch_versions = ch_versions.mix(GENERATE_HASHIDS.out.versions)
 

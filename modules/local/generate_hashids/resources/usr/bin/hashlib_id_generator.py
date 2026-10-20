@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import hashlib
 
 def convert_psl_ids(psl_file, mapping_file):

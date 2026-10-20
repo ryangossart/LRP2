@@ -8,8 +8,6 @@ process GENERATE_HASHIDS {
     input:
     tuple val(meta), path(corrected_gtf), path(classification)
     path reference_gtf
-    path hashlib_script
-    path generate_hashids_script
 
     output:
     tuple val(meta), path("*.transcriptome.hashids_mapping.txt"), emit: hashids_mapping
@@ -31,12 +29,11 @@ process GENERATE_HASHIDS {
     export R_LIBS_USER=""
     export R_LIBS="/usr/local/lib/R/site-library:/usr/lib/R/site-library:/usr/lib/R/library"
 
-    Rscript ${generate_hashids_script} \\
+    00_generate_hashids.R \\
         --basename ${prefix} \\
         --sample_gtf ${corrected_gtf} \\
         --classification ${classification} \\
         --reference_gtf ${reference_gtf} \\
-        --hashlib_script ${hashlib_script} \\
         --output_dir . \\
         $args
 
