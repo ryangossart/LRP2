@@ -1,0 +1,44 @@
+modules.json
+  s_ec4cd5db1b2b97::t_97bcab40f6952f 11,16,21,26,31,36,45,50,55-90,96
+nextflow.config
+  s_ec4cd5db1b2b97::t_a9f3eb5ff5cb3e 402
+conf/modules.config
+  s_ec4cd5db1b2b97::t_52a0bc69bbc7a1 119,129,146
+subworkflows/ryangossart/predicted_proteome/nextflow.config
+  s_ec4cd5db1b2b97::t_5407d20f4a18a9 1-23
+workflows/lrp2.nf
+  s_ec4cd5db1b2b97::t_c3df1c938827ce 17
+subworkflows/ryangossart/predicted_proteome/main.nf
+  s_ec4cd5db1b2b97::t_5407d20f4a18a9 1-5,10-101
+  s_ec4cd5db1b2b97::t_0d0081fc987524 6-9
+modules/ryangossart/cpat/cpat/main.nf
+  s_ec4cd5db1b2b97::t_800ccd9dd106aa 1
+modules/ryangossart/cpat/cpat/meta.yml
+  s_ec4cd5db1b2b97::t_826aed50adb71b 1
+modules/ryangossart/cpat/filter/main.nf
+  s_ec4cd5db1b2b97::t_4623ecec1fa3b6 1,26
+modules/ryangossart/cpat/filter/meta.yml
+  s_ec4cd5db1b2b97::t_81516447bcdb4a 1
+modules/ryangossart/sqanti/protein/meta.yml
+  s_ec4cd5db1b2b97::t_c4d0827c57f151 1
+modules/ryangossart/sqanti/proteinclassification/main.nf
+  s_ec4cd5db1b2b97::t_6cc92700c061e9 1
+modules/ryangossart/sqanti/proteinclassification/meta.yml
+  s_ec4cd5db1b2b97::t_6767ed64e9594b 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "35d304c08921fe7eb3f69948a5cddd416c966575",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
