@@ -1,4 +1,4 @@
-name: cpat_orf
+name: cpat/cpat
 description: Predict open reading frames (ORFs) using CPAT
 keywords:
   - orf

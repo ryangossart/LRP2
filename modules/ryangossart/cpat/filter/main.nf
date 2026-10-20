@@ -1,4 +1,4 @@
-process FILTER_CPAT {
+process CPAT_FILTER {
     tag "$meta.id"
     label 'process_medium'
 
@@ -23,7 +23,7 @@ process FILTER_CPAT {
     def prefix = task.ext.prefix ?: "${meta.id}"
     def cpat_coding_threshold = task.ext.cpat_coding_threshold
     if (cpat_coding_threshold == null) {
-        error "FILTER_CPAT: cpat_coding_threshold could not be resolved from task.ext.cpat_coding_threshold. Check that predicted_proteome's colocated nextflow.config (or conf/modules.config's species-based override) is included."
+        error "CPAT_FILTER: cpat_coding_threshold could not be resolved from task.ext.cpat_coding_threshold. Check that predicted_proteome's colocated nextflow.config (or conf/modules.config's species-based override) is included."
     }
 
     """

@@ -1,4 +1,4 @@
-process PROTEIN_CLASSIFICATION {
+process SQANTI_PROTEINCLASSIFICATION {
     tag "$meta.id"
     label 'process_medium'
 

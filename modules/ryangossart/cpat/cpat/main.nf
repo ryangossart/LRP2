@@ -1,4 +1,4 @@
-process CPAT_ORF {
+process CPAT_CPAT {
     tag "$meta.id"
     label 'process_low'
 

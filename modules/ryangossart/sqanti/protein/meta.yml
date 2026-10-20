@@ -1,4 +1,4 @@
-name: sqanti_protein_classification
+name: sqanti/protein
 description: Classify protein isoforms using SQANTI3 protein classification
 keywords:
   - protein

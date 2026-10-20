@@ -1,4 +1,4 @@
-name: filter_cpat
+name: cpat/filter
 description: Filter CPAT output and select best ORFs per transcript
 keywords:
   - orf
