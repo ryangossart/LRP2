@@ -28,11 +28,11 @@ process FILTER_TRANSCRIPTOME {
     script:
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
-    def protein_coding_filter = task.ext.protein_coding_filter ?: params.protein_coding_filter
-    def internal_priming_filter = task.ext.internal_priming_filter ?: params.internal_priming_filter
-    def template_switching_filter = task.ext.template_switching_filter ?: params.template_switching_filter
-    def percent_polya_threshold = task.ext.percent_polya_threshold ?: params.percent_polya_threshold
-    def transcript_class_keep = task.ext.transcript_class_keep ?: params.transcript_class_keep
+    def protein_coding_filter = task.ext.protein_coding_filter
+    def internal_priming_filter = task.ext.internal_priming_filter
+    def template_switching_filter = task.ext.template_switching_filter
+    def percent_polya_threshold = task.ext.percent_polya_threshold
+    def transcript_class_keep = task.ext.transcript_class_keep
 
     """
     exec > >(tee ${prefix}_S2_TRANSCRIPTOME_M3_FILTER_TRANSCRIPTOME_log.txt) 2>&1
