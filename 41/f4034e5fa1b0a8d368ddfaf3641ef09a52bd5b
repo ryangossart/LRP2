@@ -1,0 +1,30 @@
+modules/local/generate_hashids/resources/usr/bin/00_generate_hashids.R
+  s_ec4cd5db1b2b97::t_0a23fe7b763620 54-55
+  s_ec4cd5db1b2b97::t_957cebdca56f34 188
+  s_ec4cd5db1b2b97::t_67eece46685a4f 56-57
+  s_ec4cd5db1b2b97::t_42821c906af526 192
+subworkflows/local/transcriptome/main.nf
+  s_ec4cd5db1b2b97::t_7aa0d59f8473c1 42
+modules/local/generate_hashids/main.nf
+  s_ec4cd5db1b2b97::t_ec7e93a11df60f 32
+modules/local/generate_hashids/resources/usr/bin/hashlib_id_generator.py
+  s_ec4cd5db1b2b97::t_6f04da2e9b7f89 1
+workflows/lrp2.nf
+  s_ec4cd5db1b2b97::t_52650d982fee19 334
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "41f4034e5fa1b0a8d368ddfaf3641ef09a52bd5b",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
