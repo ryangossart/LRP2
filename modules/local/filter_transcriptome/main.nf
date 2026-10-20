@@ -10,7 +10,6 @@ process FILTER_TRANSCRIPTOME {
     path reference_gtf
     path reference_fasta
     path sample_metadata
-    path filter_script
 
     output:
     tuple val(meta), path("*.transcriptome.filtered_SQANTI_classification.txt"), emit: classification_filtered
@@ -41,7 +40,7 @@ process FILTER_TRANSCRIPTOME {
     export R_LIBS_USER=""
     export R_LIBS="/usr/local/lib/R/site-library:/usr/lib/R/site-library:/usr/lib/R/library"
 
-    Rscript ${filter_script} \\
+    02_filter_sqanti_transcripts.R \\
         --basename ${prefix} \\
         --classification ${classification_file} \\
         --sample_gtf ${corrected_gtf} \\

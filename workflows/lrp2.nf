@@ -330,8 +330,7 @@ workflow LRP2 {
                     [meta, gtf, count] },
             ch_gtf,
             ch_fasta,
-            file(sample_metadata_file),
-            file(params.filter_script)
+            file(sample_metadata_file)
         )
         ch_versions = ch_versions.mix(TRANSCRIPTOME.out.versions.ifEmpty([]))
 

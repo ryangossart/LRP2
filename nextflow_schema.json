@@ -174,15 +174,6 @@
             "fa_icon": "fas fa-filter",
             "description": "Options for the SQANTI3 QC and filtering modules.",
             "properties": {
-                "filter_script": {
-                    "type": "string",
-                    "format": "file-path",
-                    "exists": true,
-                    "description": "Path to SQANTI filtering R script.",
-                    "help_text": "R script used to filter SQANTI3 QC output.",
-                    "fa_icon": "far fa-file-code",
-                    "hidden": true
-                },
                 "sqanti_path": {
                     "type": "string",
                     "format": "directory-path",

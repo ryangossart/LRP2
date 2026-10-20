@@ -18,7 +18,6 @@ workflow TRANSCRIPTOME {
     reference_gtf               // path: reference GENCODE GTF
     reference_fasta             // path: reference GENCODE FASTA
     sample_metadata             // path: sample metadata CSV
-    filter_script               // path: R filtering script (02_filter_sqanti_transcripts.R)
 
     main:
     ch_versions = channel.empty()
@@ -56,8 +55,7 @@ workflow TRANSCRIPTOME {
                 [meta, classification, gtf, fasta, hashids, psl] },
         reference_gtf,
         reference_fasta,
-        sample_metadata,
-        filter_script
+        sample_metadata
     )
     ch_versions = ch_versions.mix(FILTER_TRANSCRIPTOME.out.versions)
 
