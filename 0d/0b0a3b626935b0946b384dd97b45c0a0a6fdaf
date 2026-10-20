@@ -1,0 +1,35 @@
+conf/modules.config
+  s_ec4cd5db1b2b97::t_b2e98f028cb3da 82,90,106
+workflows/lrp2.nf
+  s_ec4cd5db1b2b97::t_3d9df088f06dc0 16
+nextflow.config
+  s_ec4cd5db1b2b97::t_a4cd5e7eaa09e3 401
+modules.json
+  s_ec4cd5db1b2b97::t_79eb6a997e7286 73-87,102-106
+modules/ryangossart/gtf/lrp2filtertranscriptome/main.nf
+  s_ec4cd5db1b2b97::t_e0a38499c798b6 1
+modules/ryangossart/gtf/lrp2generatehashids/main.nf
+  s_ec4cd5db1b2b97::t_a0886a4f33ee17 1
+modules/ryangossart/sqanti/lrp2qc/main.nf
+  s_ec4cd5db1b2b97::t_fe0ccae7c3a783 1
+subworkflows/ryangossart/lrp2transcriptome/main.nf
+  s_ec4cd5db1b2b97::t_e00105fa579a2a 6-8,28,33,38-40,43,46,48-53,60,63-88
+subworkflows/ryangossart/lrp2transcriptome/nextflow.config
+  s_ec4cd5db1b2b97::t_33f6d54beed2b4 5-9,13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0d0b0a3b626935b0946b384dd97b45c0a0a6fdaf",
+  "prompts": {},
+  "sessions": {
+    "s_ec4cd5db1b2b97": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f294e29-317c-44b8-97c8-858b8aa1f805",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Ryan G <ryangossart@brandeis.edu>"
+    }
+  }
+}
